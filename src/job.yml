@@ -8,13 +8,13 @@ command: >-
 inputs:
   training_data:
     type: uri_file 
-    path: azureml:diabetes-data:1 
+    path: azureml:diabetes-data@latest 
   reg_rate: 0.01
 outputs:
   metrics_output:
     type: uri_folder
-environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu:1
+environment: azureml:AzureML-minimal:1
 compute: azureml:aml-cluster
 experiment_name: diabetes-training
 display_name: diabetes-train-command
-description: diabetes training job
+description: diabetes training jobs
