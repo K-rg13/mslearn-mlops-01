@@ -21,3 +21,4 @@ jobs:
             --stream \
             --resource-group ${{ vars.AZURE_RESOURCE_GROUP }} \
             --workspace-name ${{ vars.AZURE_WORKSPACE_NAME }}
+ 
